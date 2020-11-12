@@ -1,0 +1,14 @@
+# theme.toml template for a Hugo theme
+
+name = "HJC Orange Theme"
+license = "MIT"
+licenselink = ""
+description = ""
+homepage = ""
+tags = ["minimal", "orange", "blog"]
+features = ["posts"]
+min_version = "0.38"
+
+[author]
+  name = "Herman Cordes"
+  homepage = "https://www.hermancordes.nl/"

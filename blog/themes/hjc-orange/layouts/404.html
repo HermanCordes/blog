@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ $section := .Site.GetPage "section" .Section }}
+<article>
+	<header>
+        <h1>{{- .Title -}}</h1>
+	</header>
+
+	<section>
+		It seems this page doesn't exist (anymore).
+	</section>
+
+</article>
+{{ end }}

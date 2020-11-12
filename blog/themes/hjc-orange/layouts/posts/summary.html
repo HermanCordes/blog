@@ -1,0 +1,16 @@
+<div>123
+	{{ if .Date }}
+	<div>
+		post/summary.html
+		{{ .Date.Format "January 2, 2006" }}
+	</div>
+	{{ end }}
+	<h1>
+		<a href="{{ .Permalink }}">
+			{{ .Title }}
+		</a>
+	</h1>
+	<div>
+		123{{ .Summary }}123
+	</div>
+</div>

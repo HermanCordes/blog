@@ -1,0 +1,32 @@
+baseURL = "https://www.hermancordes.nl/"
+languageCode = "en-us"
+title = "Herman Cordes Blog"
+theme = "hjc-orange"
+
+# Social networks
+twitter = "HermanCordes"
+
+# How to build
+buildDrafts = false
+buildExpired = false
+buildFuture = true
+publishDir = "publish"
+
+[[menu.main]]
+  name = "home"
+  weight = 1
+  identifier = "home"
+  url = "/"
+[[menu.main]]
+  name = "tags"
+  weight = 2
+  identifier = "tags"
+  url = "/tags/"
+[[menu.main]]
+  name = "about"
+  weight = 3
+  identifier = "about"
+  url = "/about/"
+
+[taxonomies]
+  tag = "tags"

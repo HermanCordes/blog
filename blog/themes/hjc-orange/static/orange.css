@@ -1,0 +1,339 @@
+/* ============== */
+/* === GLOBAL === */
+/* ============== */
+
+html {
+  color: #222;
+  font-size: 1.4em;
+  line-height: 1.4em;
+  
+  background: #353330;
+}
+
+.white {
+  color: #fff;
+}
+
+/* ============== */
+/* === HEADER === */
+/* ============== */
+  
+body > header {
+  background: #353330;
+}
+  
+body > header > div {
+  display: flex;
+  margin: 0 auto;
+  max-width: 900px;
+
+  height: 39px;
+}
+
+body > header.top-bar > div h1 {
+  flex: 50%;
+}
+
+body > header.top-bar > div nav {
+  flex: 50%;
+}
+
+h1.logo {
+  font-family: 'Maven Pro', 'Arial', sans-serif;
+  color: #EA8F07;
+  font-size: 1.0em;
+  font-weight: normal;
+
+  margin: 0;
+}
+
+h1.logo a {
+  color: #EA8F07;
+  text-decoration: none;
+
+  display: inline-block;
+  padding: 4px 5px;
+}
+h1.logo a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav.main {
+  font-size: 1.0em;
+
+  margin: 0;
+}
+
+nav.main ul {
+  list-style: none;
+  text-align: right;
+
+  margin: 0;
+  padding: 0;
+  
+  font-family: 'Maven Pro', 'Arial', sans-serif;
+}
+
+nav.main ul li {
+  display: inline-block;
+}
+
+nav.main ul li a {
+  text-decoration: none;
+
+  padding: 3px 15px 5px;
+  color: #fff;
+  font-weight: normal;
+  font-variant: small-caps;
+  margin: 0;
+  
+  display: inline-block;
+}
+nav.main ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav.main ul li a, nav.main ul li a:after, nav.main ul li a:before {
+  transition: all .5s;
+}
+nav.main ul li a:hover {
+  color: #fff;
+}
+
+body > header.context-bar {
+  background: #F36207;
+  height: 120px;
+}
+
+/* ============== */
+/* === MAIN === */
+/* ============== */
+
+body > main {
+  background: #fff;
+
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  font-family: 'Maven Pro', 'Arial', sans-serif;
+  margin: 0 auto;
+  padding: 15px 0;
+  max-width: 900px;
+}
+
+article h1, article h2, article h3, article h4 {
+  font-family: 'Maven Pro', 'Arial', sans-serif;
+}
+article h1 {
+  font-size: 1.7em;
+}
+article h2 {
+  font-size: 1.4em;
+}
+article h3 {
+  font-size: 1.3em;
+}
+article h4 {
+  font-size: 1.2em;
+}
+
+article section {
+  margin: 15px 0;
+
+  line-height: 1.6em;
+}
+
+article header h1 {
+  display: inline-block;
+  padding: 5px 0;
+  margin: 1em 0;
+}
+article header h1 a {
+  color: #000;
+  text-decoration: none;
+}
+article header h1 a:hover {
+  background-color: #e5dfd9;
+}
+article header h1 a, article header h1 a:after, article header h1 a:before {
+  transition: all .5s;
+}
+
+article header section.metadata {
+  font-size: .7em;
+  margin: 0;
+
+  color: gray;
+}
+article header section.metadata p {
+  display: inline;
+  margin: 0;
+}
+
+article header p.excerpt {
+  font-size: 1.0em;
+  line-height: 1.7em;
+
+  margin: 0 0 .5em;
+
+  font-style: italic;
+}
+
+article section p {
+  margin: 1em 0;
+}
+
+article section p code {
+  background-color: #F7EFE6;
+  color: #F36207;
+  padding: 3px 5px;
+}
+
+article section > code {
+  display: block;
+  background-color: #F9F9F9;
+  border-left: 6px solid #EA8F07;
+  margin: 1em -25px;
+  padding: 5px 30px;
+}
+
+article blockquote {
+  background-color: #F9F9F9;
+  border-left: 6px solid #EA8F07;
+  margin: 1em -25px;
+  padding: 5px 30px;
+  
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+article img {
+  max-width: 900px;
+  height: auto;
+}
+article figure {
+  background-color: #F9F9F9;
+}
+article figure img {
+  padding: 10px 10px 0;
+}
+article figure figcaption {
+  padding: 0 10px 10px;
+  font-size: .7em;
+}
+article figure.left {
+  float: left;
+  margin: 0 25px -25px 25px;
+}
+article figure.right {
+  float: right;
+  margin: 0 -25px 25px 25px;
+}
+
+article footer h2 {
+  margin: .5em 0 1em;
+  padding-top: .5em;
+  border-top: 10px solid gray;
+}
+
+article footer ul {
+  list-style: none;
+
+  margin: 0 -10px;
+  padding: 0;
+
+  display: flex;
+}
+
+article footer ul li {
+  display: inline-block;
+  border-top: 2px solid gray;
+  
+  font-size: 0.7em;
+  line-height: 1.5em;
+
+  margin: 0 10px;
+  padding: 5px;
+  flex: 30%;
+}
+article footer ul li:first {
+  margin-left: 0;
+}
+article footer ul li:last {
+  margin-right: 0;
+}
+article footer ul li:hover {
+  background: #F7EFE6;
+  border-top: 2px solid #F36207;
+  cursor: pointer;
+}
+article footer ul li > * {
+  display: block;
+}
+article footer ul li span {
+  font-weight: bold;
+  font-variant: small-caps;
+  color: #F36207;
+}
+article footer ul li a {
+  color: #000;
+  display: inline-block;
+}
+article footer ul li a:hover {
+  background: #e5e5e5;
+  color: #F36207;
+}
+article footer ul li time {
+  color: gray;
+  font-size: 0.8em;
+}
+
+article a {
+  color: #000;
+  text-decoration: underline;
+}
+article a:hover {
+  color: #F36207;
+}
+
+article table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+article table tr:first-child td {
+  border-top: 2px dashed #898989;
+}
+article table td {
+  line-height: 2.1em;
+  border-bottom: 2px dashed #898989;
+}
+article table td.right {
+  text-align: right;
+}
+
+/* ============== */
+/* === FOOTER === */
+/* ============== */
+
+body > footer {
+  background: #353330;
+
+  margin: 0;
+  padding: 0;
+}
+
+body > footer section {
+  margin: 0 auto;
+  padding: 15px 0;
+  max-width: 900px;
+
+  text-align: center;
+}
+
+body > footer section p {
+  color: rgba(255, 255, 255, 0.2);
+}

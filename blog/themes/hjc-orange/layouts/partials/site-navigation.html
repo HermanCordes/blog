@@ -1,0 +1,14 @@
+
+  <nav class="main" role="navigation">
+	{{ if .Site.Menus.main }}
+	<ul>
+	  {{ range .Site.Menus.main }}
+	  <li>
+		<a href="{{ .URL }}" title="Navigate to the {{ .Name }} page">
+			{{ .Name }}
+		</a>
+	  </li>
+	  {{ end }}
+	</ul>
+	{{ end }}
+  </nav>

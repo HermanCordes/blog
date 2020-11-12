@@ -1,0 +1,6 @@
+[submodule "blog/themes/hugo-lamp"]
+	path = blog/themes/hugo-lamp
+	url = https://github.com/huyb1991/hugo-lamp
+[submodule "blog/themes/starter"]
+	path = blog/themes/starter
+	url = https://github.com/jimfrenette/hugo-starter.git

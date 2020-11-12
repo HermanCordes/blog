@@ -1,0 +1,21 @@
+{{ define "main" }}
+{{ $section := .Site.GetPage "section" .Section }}
+<article>
+	<header>
+		<section class="metadata">
+			<p><span>This article was published on</span> <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{- .Date.Format "January 2, 2006" -}}</time></p>
+		</section>
+        <h1><a href="#">{{- .Title -}}</a></h1>
+		<p class="excerpt">{{- .Summary -}}</p>
+	</header>
+
+	<section>
+		{{- .Content -}}
+		{{- partial "tags.html" . -}}
+		<!-- <div>
+			{{ template "_internal/disqus.html" . }}
+		</div> -->
+	</section>
+
+</article>
+{{ end }}

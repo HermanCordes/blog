@@ -1,37 +1,44 @@
-## HermanCordes.nl
+# Initial installation
 
-You can use the [editor on GitHub](https://github.com/HermanCordes/blog/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Install Hugo with Chocolatey
+`choco install hugo -confirm`
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Create a new site
+`hugo new site blog`
 
-### Markdown
+## Add theme as git submodule
+`cd blog`
+`git submodule add https://github.com/huyb1991/hugo-lamp themes/hugo-lamp`
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Load submodule when already added
+`git submodule update --init --recursive`
 
-```markdown
-Syntax highlighted code block
+## Edit config.toml to define the hugo-lamp theme
+`theme = "hugo-lamp"`
 
-# Header 1
-## Header 2
-### Header 3
+## Build and start server
+`hugo server -D`
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+# Using [starter theme](https://themes.gohugo.io/hugo-starter/)
+`git submodule add https://github.com/jimfrenette/hugo-starter.git themes/starter`
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+# Usage
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/HermanCordes/blog/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Create new posts
+`hugo new posts/my-first-post.md`
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# Deployment
+
+## Using Azure DevOps
+See: https://blog.headforcloud.com/2018/12/11/hugo-devops-deploy/
+
+
+# Customization
+
+## Theme details
+See: https://github.com/josephhutch/aether

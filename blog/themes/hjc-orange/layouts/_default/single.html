@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{ $section := .Site.GetPage "section" .Section }}
+<article>
+	<header>
+        <h1><a href="#">{{- .Title -}}</a></h1>
+	</header>
+
+	<section>
+		{{- .Content -}}
+		<!-- <div>
+			{{ template "_internal/disqus.html" . }}
+		</div> -->
+	</section>
+
+</article>
+{{ end }}
